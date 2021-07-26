@@ -1,0 +1,154 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorting Visualizer</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <div class="array-inputs">
+                <div class="array-size">
+                    <label for="a_size">Size of the array:</label>
+                    <input id="a_size" type="range" min="20" max="150" value="80" step="1">
+                </div>
+                <div class="algo-speed">
+                    <label for="a_speed">Speed of the algorithm:</label>
+                    <input id="a_speed" type="range" min="1" max="5" value="4" step="1">
+                </div>
+                <button id="a_generate">Generate New Array!</button>
+            </div>
+
+            <div class="header_right">
+                <p class="nav-heading">Sorting Visualizer</p>
+
+                <div class="algos">
+                    <button>Bubble</button>
+                    <button>Selection</button>
+                    <button>Insertion</button>
+                    <button>Merge</button>
+                    <button>Quick</button>
+                    <button>Heap</button>
+                </div>
+            </div>
+
+        </nav>
+    </header>
+
+    <section>
+        <div id="Info_Cont1">
+            <p></p>
+        </div>
+        <div id="array_container" style="flex-direction: row;">
+            <div style="margin: 0.1%; background-color: blue; height: 45%; width: 1.05%;"></div>
+            <div style="margin: 0.1%; background-color: blue; height: 61%; width: 1.05%;"></div>
+            <div style="margin: 0.1%; background-color: blue; height: 62%; width: 1.05%;"></div>
+            <div style="margin: 0.1%; background-color: blue; height: 26%; width: 1.05%;"></div>
+            <div style="margin: 0.1%; background-color: blue; height: 31%; width: 1.05%;"></div>
+            <div style="margin: 0.1%; background-color: blue; height: 45%; width: 1.05%;"></div>
+            <div style="margin: 0.1%; background-color: blue; height: 59%; width: 1.05%;"></div>
+            <div style="margin: 0.1%; background-color: blue; height: 22%; width: 1.05%;"></div>
+            <div style="margin: 0.1%; background-color: blue; height: 68%; width: 1.05%;"></div>
+            <div style="margin: 0.1%; background-color: blue; height: 27%; width: 1.05%;"></div>
+            <div style="margin: 0.1%; background-color: blue; height: 21%; width: 1.05%;"></div>
+            <div style="margin: 0.1%; background-color: blue; height: 17%; width: 1.05%;"></div>
+            <div style="margin: 0.1%; background-color: blue; height: 47%; width: 1.05%;"></div>
+            <div style="margin: 0.1%; background-color: blue; height: 19%; width: 1.05%;"></div>
+            <div style="margin: 0.1%; background-color: blue; height: 51%; width: 1.05%;"></div>
+            <div style="margin: 0.1%; background-color: blue; height: 16%; width: 1.05%;"></div>
+            <div style="margin: 0.1%; background-color: blue; height: 37%; width: 1.05%;"></div>
+            <div style="margin: 0.1%; background-color: blue; height: 27%; width: 1.05%;"></div>
+            <div style="margin: 0.1%; background-color: blue; height: 46%; width: 1.05%;"></div>
+            <div style="margin: 0.1%; background-color: blue; height: 23%; width: 1.05%;"></div>
+            <div style="margin: 0.1%; background-color: blue; height: 72%; width: 1.05%;"></div>
+            <div style="margin: 0.1%; background-color: blue; height: 30%; width: 1.05%;"></div>
+            <div style="margin: 0.1%; background-color: blue; height: 25%; width: 1.05%;"></div>
+            <div style="margin: 0.1%; background-color: blue; height: 54%; width: 1.05%;"></div>
+            <div style="margin: 0.1%; background-color: blue; height: 59%; width: 1.05%;"></div>
+            <div style="margin: 0.1%; background-color: blue; height: 14%; width: 1.05%;"></div>
+            <div style="margin: 0.1%; background-color: blue; height: 34%; width: 1.05%;"></div>
+            <div style="margin: 0.1%; background-color: blue; height: 68%; width: 1.05%;"></div>
+            <div style="margin: 0.1%; background-color: blue; height: 58%; width: 1.05%;"></div>
+            <div style="margin: 0.1%; background-color: blue; height: 72%; width: 1.05%;"></div>
+            <div style="margin: 0.1%; background-color: blue; height: 44%; width: 1.05%;"></div>
+            <div style="margin: 0.1%; background-color: blue; height: 31%; width: 1.05%;"></div>
+            <div style="margin: 0.1%; background-color: blue; height: 47%; width: 1.05%;"></div>
+            <div style="margin: 0.1%; background-color: blue; height: 52%; width: 1.05%;"></div>
+            <div style="margin: 0.1%; background-color: blue; height: 37%; width: 1.05%;"></div>
+            <div style="margin: 0.1%; background-color: blue; height: 63%; width: 1.05%;"></div>
+            <div style="margin: 0.1%; background-color: blue; height: 71%; width: 1.05%;"></div>
+            <div style="margin: 0.1%; background-color: blue; height: 41%; width: 1.05%;"></div>
+            <div style="margin: 0.1%; background-color: blue; height: 50%; width: 1.05%;"></div>
+            <div style="margin: 0.1%; background-color: blue; height: 52%; width: 1.05%;"></div>
+            <div style="margin: 0.1%; background-color: blue; height: 34%; width: 1.05%;"></div>
+            <div style="margin: 0.1%; background-color: blue; height: 57%; width: 1.05%;"></div>
+            <div style="margin: 0.1%; background-color: blue; height: 39%; width: 1.05%;"></div>
+            <div style="margin: 0.1%; background-color: blue; height: 32%; width: 1.05%;"></div>
+            <div style="margin: 0.1%; background-color: blue; height: 51%; width: 1.05%;"></div>
+            <div style="margin: 0.1%; background-color: blue; height: 69%; width: 1.05%;"></div>
+            <div style="margin: 0.1%; background-color: blue; height: 41%; width: 1.05%;"></div>
+            <div style="margin: 0.1%; background-color: blue; height: 51%; width: 1.05%;"></div>
+            <div style="margin: 0.1%; background-color: blue; height: 36%; width: 1.05%;"></div>
+            <div style="margin: 0.1%; background-color: blue; height: 25%; width: 1.05%;"></div>
+            <div style="margin: 0.1%; background-color: blue; height: 31%; width: 1.05%;"></div>
+            <div style="margin: 0.1%; background-color: blue; height: 25%; width: 1.05%;"></div>
+            <div style="margin: 0.1%; background-color: blue; height: 59%; width: 1.05%;"></div>
+            <div style="margin: 0.1%; background-color: blue; height: 57%; width: 1.05%;"></div>
+            <div style="margin: 0.1%; background-color: blue; height: 73%; width: 1.05%;"></div>
+            <div style="margin: 0.1%; background-color: blue; height: 44%; width: 1.05%;"></div>
+            <div style="margin: 0.1%; background-color: blue; height: 14%; width: 1.05%;"></div>
+            <div style="margin: 0.1%; background-color: blue; height: 33%; width: 1.05%;"></div>
+            <div style="margin: 0.1%; background-color: blue; height: 53%; width: 1.05%;"></div>
+            <div style="margin: 0.1%; background-color: blue; height: 71%; width: 1.05%;"></div>
+            <div style="margin: 0.1%; background-color: blue; height: 19%; width: 1.05%;"></div>
+            <div style="margin: 0.1%; background-color: blue; height: 20%; width: 1.05%;"></div>
+            <div style="margin: 0.1%; background-color: blue; height: 40%; width: 1.05%;"></div>
+            <div style="margin: 0.1%; background-color: blue; height: 50%; width: 1.05%;"></div>
+            <div style="margin: 0.1%; background-color: blue; height: 60%; width: 1.05%;"></div>
+            <div style="margin: 0.1%; background-color: blue; height: 74%; width: 1.05%;"></div>
+            <div style="margin: 0.1%; background-color: blue; height: 54%; width: 1.05%;"></div>
+            <div style="margin: 0.1%; background-color: blue; height: 10%; width: 1.05%;"></div>
+            <div style="margin: 0.1%; background-color: blue; height: 69%; width: 1.05%;"></div>
+            <div style="margin: 0.1%; background-color: blue; height: 22%; width: 1.05%;"></div>
+            <div style="margin: 0.1%; background-color: blue; height: 62%; width: 1.05%;"></div>
+            <div style="margin: 0.1%; background-color: blue; height: 16%; width: 1.05%;"></div>
+            <div style="margin: 0.1%; background-color: blue; height: 67%; width: 1.05%;"></div>
+            <div style="margin: 0.1%; background-color: blue; height: 20%; width: 1.05%;"></div>
+            <div style="margin: 0.1%; background-color: blue; height: 11%; width: 1.05%;"></div>
+            <div style="margin: 0.1%; background-color: blue; height: 56%; width: 1.05%;"></div>
+            <div style="margin: 0.1%; background-color: blue; height: 23%; width: 1.05%;"></div>
+            <div style="margin: 0.1%; background-color: blue; height: 50%; width: 1.05%;"></div>
+            <div style="margin: 0.1%; background-color: blue; height: 31%; width: 1.05%;"></div>
+            <div style="margin: 0.1%; background-color: blue; height: 45%; width: 1.05%;"></div>
+        </div>
+        <div id="Info_Cont2">
+            <p></p>
+        </div>
+
+    </section>
+
+    <footer>
+
+    </footer>
+
+    <script src="main.js"></script>
+    <script src="effects.js"></script>
+
+    <script src="bubble_sort.js"></script>
+    <script src="selection_sort.js"></script>
+    <script src="insertion_sort.js"></script>
+    <script src="merge_sort.js"></script>
+    <script src="quick_sort.js"></script>
+    <script src="heap_sort.js"></script>
+
+
+
+</body>
+
+</html>
